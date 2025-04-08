@@ -158,3 +158,42 @@ function countBy(x, n) {
     return newArray;
 }
 console.log(countBy(2, 5));
+
+
+
+
+// // PROBLEM 11
+const countSheep = function (num) {
+    let result = "";
+    for (let i = 1; i <= num; i++) {
+        result += `${i} sheep...`
+    }
+    return result;
+}
+
+console.log(countSheep(3));
+
+
+
+
+// // PROBLEM 12
+function isDivisible(n, x, y) {
+    if (n % x === 0 && n % y === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isDivisible(12, 3, 4));
+
+
+
+
+// // PROBLEM 13
+function greet(name, owner) {
+    if (owner === name) {
+        return "Hello boss"
+    } else {
+        return "Hello guest"
+    }
+}
